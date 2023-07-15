@@ -9,4 +9,10 @@ public interface DepartmentService {
     List<Department> saveDepartments(List<Department> departments);
 
     List<Department> fetchDepartmentList();
+
+    Department fetchDepartmentById(Long departmentId);
+
+    void deleteDepartmentById(Long departmentId);
+
+    Department updateDepartment(Long departmentId, Department newDepartment);
 }
